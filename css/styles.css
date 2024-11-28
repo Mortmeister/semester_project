@@ -1,0 +1,33 @@
+/* Global */
+
+:root {
+  /* Color Scheme */
+  /* Primary Colors */
+  --bright-blue: #007bff;
+  --vibrant-orange: #ff6f00;
+
+  /* Secondary Colors */
+  --lime-green: #7dce13;
+  --bright-yellow: #ffd700;
+
+  /* Neutral Colors */
+  --dark-grey: #333333;
+  --light-grey: #f4f4f4;
+
+  /* Accent colors */
+  --sky-blue: #87cefa;
+  --pinkish-red: #ff4c4c;
+
+  /* Fonts */
+  --xl: 48px;
+  --l: 40px;
+  --medium: 33px;
+  --small: 23px;
+  --xs: 19px;
+}
+
+/* Home Page */
+
+.hero-banner {
+  background-image: url("../images/samuel-zeller-158996.jpg");
+}
