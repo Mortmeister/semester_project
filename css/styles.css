@@ -44,10 +44,21 @@
 
 .c-btn--ghost {
   background-color: transparent;
+  color: var(--bright-blue);
   border: var(--bright-blue) solid 1px;
 }
 
 /* Global */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 .bright-blue {
   color: var(--bright-blue);
@@ -113,23 +124,25 @@ body {
   gap: 50px;
 }
 
+.featured-section {
+  display: flex;
+  margin: 0 -1rem;
+}
+
+.featured-section div {
+  flex: 1;
+}
+
 .featured-section--image-1 {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 
 .featured-section--image-2 {
   max-width: 100%;
-  height: 100%;
+  height: 60%;
   margin-top: auto;
-}
-
-.featured-section {
-  display: flex;
-}
-
-.featured-section div {
-  flex: 1;
+  object-fit: cover;
 }
 
 .featured-section-row {
@@ -176,8 +189,8 @@ body {
 .featured-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  position: absolute;
-  top: 85%;
+  position: relative;
+  margin-top: -100px;
 }
 
 .featured-image,
@@ -200,4 +213,142 @@ body {
 .about-container p {
   font-size: 32px;
   margin-bottom: 0;
+}
+
+/* Explore page */
+
+.circle-container {
+  display: flex;
+  margin-top: 100px;
+  gap: 25px;
+  padding: 0 60px;
+}
+
+.circle-container div {
+  aspect-ratio: 1;
+  text-align: center;
+}
+
+.rounded-image {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.explore-featured h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.grid-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 0 60px;
+  margin-top: 50px;
+}
+
+.grid-card img {
+  height: 100%;
+  width: 100%;
+}
+
+.grid-card-column {
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  text-align: center;
+}
+
+.grid-card-column a {
+  align-self: center;
+  margin-top: auto;
+}
+
+.grid-card-column p {
+  font-size: 23px;
+}
+
+/* Explore page */
+
+.explore-resources {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.explore-resources > a {
+  color: black;
+  text-align: center;
+}
+
+/* Exhibits */
+
+.exhibits-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 40px;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.featured-section h1 {
+  margin-bottom: 30px;
+}
+
+.exhibits-nav a {
+  color: var(--dark-grey);
+  padding-left: 25px;
+}
+
+.featured-section div {
+  padding: 20px;
+  margin: 0 2rem;
+  flex: 0 0 calc(50% - 60px);
+}
+
+.test {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 0 20px;
+}
+
+/* Exhibit - Biology and Medicine */
+
+.biology-hero {
+  background-image: url("../images/biology-banner.jpg");
+  height: 80dvh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.biology-hero p {
+  max-width: 63%;
+}
+
+.biology-hero h1,
+h3,
+p {
+  color: var(--light-grey);
+  font-weight: 200;
+}
+
+.exhibit-row {
+  align-items: center;
+}
+
+.exhibit-row p,
+h2,
+a {
+  color: var(--dark-grey);
+}
+
+.exhibit-row a {
+  margin-top: auto;
+  align-self: flex-end;
 }
