@@ -1,5 +1,7 @@
 /* Global */
 
+@import "https://unpkg.com/open-props";
+
 :root {
   /* Color Scheme */
   /* Primary Colors */
@@ -451,4 +453,70 @@ div p {
 
 .event-column > p {
   font-size: var(--small);
+}
+
+/* Contact form */
+
+.contact-page {
+  background-image: linear-gradient(var(--sky-blue), var(--light-grey));
+}
+
+.contact-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.contact-container > h1,
+.contact-container > h2 {
+  text-align: center;
+}
+
+.contact-page > p,
+h3 {
+  color: var(--dark-grey);
+}
+
+.form-section {
+  max-width: 750px;
+  margin: 40px auto 20px;
+}
+
+.form {
+  box-shadow: var(--shadow-2);
+  padding: 50px;
+  background-image: linear-gradient(var(--sky-blue), var(--light-grey));
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#message {
+  font-family: inherit;
+  padding: 5px;
+  font-size: var(--xs);
+  box-shadow: var(--shadow-2);
+}
+
+.form-input {
+  height: 45px;
+  box-shadow: var(--inner-shadow-1);
+}
+
+button {
+  align-self: center;
+  margin-top: 15px;
+  background-color: var(--vibrant-orange);
+}
+
+.wrapper {
+  max-width: 750px;
+  padding: 50px 50px 0;
+}
+
+.wrapper > h1,
+.wrapper > h2 {
+  text-align: center;
 }
