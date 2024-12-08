@@ -28,80 +28,82 @@
   <body>
     <header>
       <div>
-        <img src="images/logo.png" alt="logo of the museum" />
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo of the museum" />
+        </a>
       </div>
       <nav>
         <a href="index.html">Home</a>
-        <a href="exhibits.html">Exhibits</a>
+        <div class="sub-nav">
+          <button class="header-btn">Exhibits</button>
+          <div class="sub-nav-content">
+            <a href="exhibit_biology.html">Biology and Medicine</a>
+            <a href="exhibit_cosmology.html">Cosmology</a>
+            <a href="exhibit_ecology.html">Ecology</a>
+            <a href="exhibit_evolution.html">Evolution</a>
+            <a href="exhibit_robotics_ai.html">Robotics and AI</a>
+          </div>
+        </div>
         <a href="visit.html">Visit</a>
         <a href="events.html">Events</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <div class="sub-nav">
+          <button class="header-btn">Explore</button>
+          <div class="sub-nav-content">
+            <a href="explore_kids.html">For Kids</a>
+            <a href="#">For Teachers</a>
+            <a href="#">For Researchers</a>
+          </div>
+        </div>
+        <a href="support.html">Support</a>
       </nav>
     </header>
     <main>
-      <!-- <section class="featured-section">
-        <div>
-          <img
-            src="images/featured_image.jpg"
-            alt="Old man staring out at the museum from the second floor"
-            class="featured-section--image-1"
-          />
-        </div>
-        <div class="featured-section-row">
-          <h1>Special events and exhibitions</h1>
-          <h2>
-            Exciting programs and exhibitions happening now at the Community
-            Science Museum!
-          </h2>
-          <img
-            src="images/arab_traders.jpg"
-            alt="Old man staring out at the museum from the second floor"
-            class="featured-section--image-2"
-          />
-        </div>
-      </section> -->
-
-      <section class="featured-section">
-        <div>
-          <img
-            src="images/professor.jpg"
-            alt="A black jet plane inside a hangar"
-            class="featured-section--image-1"
-          />
-        </div>
-        <div class="featured-section-row event-column">
-          <h1>Visiting Professor of Aeronautics</h1>
-          <p>
-            Professor Sheila Widnall from MIT presents a series of fascinating
-            lectures on the history and future of aeronautics.
-          </p>
-          <p>Lecture Dates: Nov 20, 22, 24 at 6 PM</p>
-          <a href="#" class="c-btn">Register</a>
-        </div>
+      <section class="events-banner">
+        <h1>Events</h1>
       </section>
 
-      <section class="featured-section">
-        <div class="featured-section-row event-column">
-          <h1>Night at the Museum</h1>
-          <p>
-            Get your family together for an exciting night in the museum as you
-            sleep over beside dinosaurs and science displays. Bring your own
-            sleeping bag and get ready to rough it as we go exploring the
-            wonders of science.
-          </p>
-          <p>Date: Dec 2 | Time: 8 PM - 7 AM</p>
+      <div class="test">
+        <section class="featured-section">
+          <div>
+            <img
+              src="images/professor.jpg"
+              alt="A black jet plane inside a hangar"
+              class="featured-section--image-1"
+            />
+          </div>
+          <div class="featured-section-row event-column">
+            <h1>Visiting Professor of Aeronautics</h1>
+            <p>
+              Professor Sheila Widnall from MIT presents a series of fascinating
+              lectures on the history and future of aeronautics.
+            </p>
+            <p>Lecture Dates: Nov 20, 22, 24 at 6 PM</p>
+            <a href="#" class="c-btn">Register</a>
+          </div>
+        </section>
 
-          <a href="#" class="c-btn">Register</a>
-        </div>
-        <div>
-          <img
-            src="images/night-at-the-museum.jpg"
-            alt="Kids with sleeping bags in front of a dinosaur"
-            class="featured-section--image-1"
-          />
-        </div>
-      </section>
+        <section class="featured-section">
+          <div class="featured-section-row event-column">
+            <h1>Night at the Museum</h1>
+            <p>
+              Get your family together for an exciting night in the museum as
+              you sleep over beside dinosaurs and science displays. Bring your
+              own sleeping bag and get ready to rough it as we go exploring the
+              wonders of science.
+            </p>
+            <p>Date: Dec 2 | Time: 8 PM - 7 AM</p>
+
+            <a href="#" class="c-btn">Register</a>
+          </div>
+          <div>
+            <img
+              src="images/night-at-the-museum.jpg"
+              alt="Kids with sleeping bags in front of a dinosaur"
+              class="featured-section--image-1"
+            />
+          </div>
+        </section>
+      </div>
 
       <section class="featured-section">
         <div>
@@ -160,5 +162,58 @@
         </div>
       </div>
     </main>
+    <footer>
+      <section>
+        <div>
+          <h3>Community Science Museum</h3>
+          <p>Storgata 26, 0622</p>
+          <p>Oslo</p>
+          <p>info@community-museum.com</p>
+        </div>
+
+        <div>
+          <h3>Organisation number</h3>
+          <p>998076480</p>
+        </div>
+
+        <div>
+          <h3>Newsletter</h3>
+          <p>Sign up for our newsletter</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="footer-hours">
+          <h3>Hours</h3>
+          <p>Monday: Closed</p>
+          <p>Tuesday: 10:00 - 16:00</p>
+          <p>Wednesday: 10:00 - 16:00</p>
+          <p>Thursday: 10:00 - 16:00</p>
+          <p>Friday: 10:00 - 19:00</p>
+          <p>Saturday: 9:00 - 16:00</p>
+          <p>Sunday: 9:00 - 13:00</p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>Sponsors</p>
+          <p>Press</p>
+          <p>Internship</p>
+          <p>Research</p>
+          <p>Donate</p>
+        </div>
+        <div>
+          <h3>Follow us:</h3>
+          <p>Instagram</p>
+          <p>Facebook</p>
+          <p>Snapchat</p>
+          <p>Tik Tok</p>
+          <p>Twitter</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

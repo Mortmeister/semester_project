@@ -36,11 +36,27 @@
       </div>
       <nav>
         <a href="index.html">Home</a>
-        <a href="exhibits.html">Exhibits</a>
+        <div class="sub-nav">
+          <button class="header-btn">Exhibits</button>
+          <div class="sub-nav-content">
+            <a href="exhibit_biology.html">Biology and Medicine</a>
+            <a href="exhibit_cosmology.html">Cosmology</a>
+            <a href="exhibit_ecology.html">Ecology</a>
+            <a href="exhibit_evolution.html">Evolution</a>
+            <a href="exhibit_robotics_ai.html">Robotics and AI</a>
+          </div>
+        </div>
         <a href="visit.html">Visit</a>
         <a href="events.html">Events</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <div class="sub-nav">
+          <button class="header-btn">Explore</button>
+          <div class="sub-nav-content">
+            <a href="explore_kids.html">For Kids</a>
+            <a href="#">For Teachers</a>
+            <a href="#">For Researchers</a>
+          </div>
+        </div>
+        <a href="support.html">Support</a>
       </nav>
     </header>
     <main>
@@ -60,15 +76,58 @@
           >
         </div>
       </section>
+
+      <div class="test">
+        <section>
+          <h1>Explore exhibition spaces</h1>
+          <div class="featured-exhibit-row">
+            <a href="exhibits.html">
+              <div>
+                <img
+                  src="images/cosmology.jpg"
+                  alt="a man sitting in a machine with austronaut suit"
+                  class="rounded-image"
+                />
+                <p>Biology and Medicine</p>
+              </div>
+            </a>
+            <a href="exhibit_biology.html">
+              <div>
+                <img
+                  src="images/evolution.jpg"
+                  alt="large skeleton head of a dinosaur"
+                  class="rounded-image"
+                />
+                <p>Cosmology</p>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <img
+                  src="images/robotics-and-ai.jpg"
+                  alt="A boy wearing viritual reality goggles"
+                  class="rounded-image"
+                />
+                <p>Ecology</p>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <img src="images/scientific.jpg" alt="" class="rounded-image" />
+                <p>Evolution</p>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <img src="images/scientific.jpg" alt="" class="rounded-image" />
+                <p>Robotics and AI</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
       <div class="test">
         <section class="featured-section">
-          <div>
-            <img
-              src="images/featured_image.jpg"
-              alt="Old man staring out at the museum from the second floor"
-              class="featured-section--image-1"
-            />
-          </div>
           <div class="featured-section-row">
             <h1>Special events and exhibitions</h1>
             <h2>
@@ -81,51 +140,76 @@
               class="featured-section--image-2"
             />
           </div>
+          <div>
+            <img
+              src="images/featured_image.jpg"
+              alt="Old man staring out at the museum from the second floor"
+              class="featured-section--image-1"
+            />
+          </div>
         </section>
       </div>
 
-      <section class="featured-events">
-        <div class="featured-events-column">
-          <h2>Visiting professor of Aueronautics</h2>
-          <img
-            src="images/ball-1010907_1920.jpg"
-            alt="Image of a black jet plane inside a hangar"
-            class="featured-events-image"
-          />
-          <p>
-            Professor Sheila Widnall from MIT presents a series of fascinating
-            lectures on the history and future of aeronautics.
-          </p>
-          <a href="#" class="c-btn">Learn More</a>
-        </div>
+      <div class="test">
+        <h1>Events</h1>
 
-        <div class="featured-events-column">
-          <h2>Night at the museum</h2>
-          <img
-            src="images/night-at-the-museum.jpg"
-            alt="Kids with sleeping bags in front of a dinosaur"
-            class="featured-events-image"
-          />
-          <p>
-            Spend a thrilling night with your family in the museum! Sleep among
-            dinosaurs and explore science in the dark.
-          </p>
-          <a href="#" class="c-btn">Learn More</a>
-        </div>
-        <div class="featured-events-column">
-          <h2>Energetica Exhibition</h2>
-          <img
-            src="images/ball-1010907_1920.jpg"
-            alt="Image of a black jet plane inside a hangar"
-            class="featured-events-image"
-          />
-          <p>
-            Experience the power of the elements in this stunning exhibition
-            from the NEMO Science Museum.
-          </p>
-          <a href="#" class="c-btn">Learn More</a>
-        </div>
-      </section>
+        <section class="featured-events">
+          <div class="featured-events-column">
+            <a href="events.html">
+              <div>
+                <img
+                  src="images/professor.jpg"
+                  alt="Image of a black jet plane inside a hangar"
+                  class="featured-events-image"
+                />
+                <h2>Visiting professor of Aueronautics</h2>
+                <p>
+                  Professor Sheila Widnall from MIT presents a series of
+                  fascinating lectures on the history and future of aeronautics.
+                </p>
+              </div>
+              <!-- <a href="#" class="c-btn">Learn More</a> -->
+            </a>
+          </div>
+
+          <div class="featured-events-column">
+            <a href="">
+              <div>
+                <img
+                  src="images/night-at-the-museum.jpg"
+                  alt="Kids with sleeping bags in front of a dinosaur"
+                  class="featured-events-image"
+                />
+                <h2>Night at the museum</h2>
+                <p>
+                  Spend a thrilling night with your family in the museum! Sleep
+                  among dinosaurs and explore science in the dark.
+                </p>
+              </div>
+            </a>
+            <!-- <a href="#" class="c-btn">Learn More</a> -->
+          </div>
+
+          <div class="featured-events-column">
+            <a href="">
+              <div>
+                <img
+                  src="images/energetica.jpg"
+                  alt="A woman looking at large lava lamps at an exhibition"
+                  class="featured-events-image"
+                />
+                <h2>Energetica Exhibition</h2>
+
+                <p>
+                  Experience the power of the elements in this stunning
+                  exhibition from the NEMO Science Museum.
+                </p>
+                <!-- <a href="#" class="c-btn">Learn More</a> -->
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
 
       <div class="test">
         <section class="featured-about">
@@ -171,6 +255,82 @@
           </div>
         </section>
       </div>
+      <!-- <div class="test">
+        <section class="featured-section">
+          <div>
+            <img
+              src="images/rectangle.jpg"
+              alt="Woman looking at large standing lava lamps with bright colors"
+              class="featured-section--image-1"
+            />
+          </div>
+          <div class="featured-section-row">
+            <h1>Explore exhibitions</h1>
+
+            <nav class="exhibits-nav">
+              <li><a href="exhibit_biology.html">Biology and Medicine</a></li>
+              <li><a href="">Cosmology</a></li>
+              <li><a href="">Ecology</a></li>
+              <li><a href="">Evolution</a></li>
+              <li><a href="">Robotics and AI</a></li>
+            </nav>
+          </div>
+        </section>
+      </div> -->
     </main>
+
+    <footer>
+      <section>
+        <div>
+          <h3>Community Science Museum</h3>
+          <p>Storgata 26, 0622</p>
+          <p>Oslo</p>
+          <p>info@community-museum.com</p>
+        </div>
+
+        <div>
+          <h3>Organisation number</h3>
+          <p>998076480</p>
+        </div>
+
+        <div>
+          <h3>Newsletter</h3>
+          <p>Sign up for our newsletter</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="footer-hours">
+          <h3>Hours</h3>
+          <p>Monday: Closed</p>
+          <p>Tuesday: 10:00 - 16:00</p>
+          <p>Wednesday: 10:00 - 16:00</p>
+          <p>Thursday: 10:00 - 16:00</p>
+          <p>Friday: 10:00 - 19:00</p>
+          <p>Saturday: 9:00 - 16:00</p>
+          <p>Sunday: 9:00 - 13:00</p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <a href="about.html"><p>About Us</p></a>
+          <a href="contact.html"> <p>Contact Us</p></a>
+          <p>Sponsors</p>
+          <p>Press</p>
+          <p>Internship</p>
+          <p>Research</p>
+          <p>Donate</p>
+        </div>
+        <div>
+          <h3>Follow us:</h3>
+          <p>Instagram</p>
+          <p>Facebook</p>
+          <p>Snapchat</p>
+          <p>Tik Tok</p>
+          <p>Twitter</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

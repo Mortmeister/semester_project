@@ -25,19 +25,40 @@
   <body>
     <header>
       <div>
-        <img src="images/logo.png" alt="logo of the museum" />
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo of the museum" />
+        </a>
       </div>
       <nav>
         <a href="index.html">Home</a>
-        <a href="exhibits.html">Exhibits</a>
+        <div class="sub-nav">
+          <button class="header-btn">Exhibits</button>
+          <div class="sub-nav-content">
+            <a href="exhibit_biology.html">Biology and Medicine</a>
+            <a href="exhibit_cosmology.html">Cosmology</a>
+            <a href="exhibit_ecology.html">Ecology</a>
+            <a href="exhibit_evolution.html">Evolution</a>
+            <a href="exhibit_robotics_ai.html">Robotics and AI</a>
+          </div>
+        </div>
         <a href="visit.html">Visit</a>
         <a href="events.html">Events</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <div class="sub-nav">
+          <button class="header-btn">Explore</button>
+          <div class="sub-nav-content">
+            <a href="explore_kids.html">For Kids</a>
+            <a href="#">For Teachers</a>
+            <a href="#">For Researchers</a>
+          </div>
+        </div>
+        <a href="support.html">Support</a>
       </nav>
     </header>
     <main>
-      <section class="biology-hero">
+      <section
+        class="biology-hero exhibit-hero"
+        title="background image of a plastic heart"
+      >
         <h3>Exhibits - Biology and Medicine</h3>
         <h1>Biology and medicine</h1>
         <p>
@@ -59,9 +80,8 @@
         </p>
       </section>
 
-      <h1>Exhibits</h1>
-
       <div class="test">
+        <h1>Exhibits</h1>
         <section class="featured-section">
           <div>
             <img
@@ -73,12 +93,56 @@
           <div class="featured-section-row exhibit-row">
             <h1>From Cells to Cure</h1>
             <p>
-              For many people their life expectancy is much longer and their
-              quality of life much improved, thanks to the growth of our
-              understanding of medicine. Over a series of exhibits we explore
-              the history of medicine and take a look at some major
-              breakthroughs including the discovery of penicillin and the first
-              heart transplant.
+              Take a closer look at the complex systems that keep the human body
+              alive and thriving. Learn how your heart pumps blood, your lungs
+              exchange oxygen, and your brain processes thoughts. Interactive
+              displays let you explore anatomy and physiology through hands-on
+              activities. See how the body works in harmony to support life
+              every second.
+            </p>
+            <a href="#" class="c-btn c-btn--ghost">Read More</a>
+          </div>
+        </section>
+
+        <section class="featured-section">
+          <div class="featured-section-row exhibit-row">
+            <h1>DNA: The blueprint of life</h1>
+            <p>
+              Unlock the secrets of DNA and how it carries the instructions for
+              building and maintaining life. Explore the double helix structure
+              through interactive models and virtual activities. Learn how
+              advances in genetic research are revolutionizing medicine and
+              agriculture. Discover how studying DNA helps us understand
+              diseases, inheritance, and evolution.
+            </p>
+            <a href="#" class="c-btn c-btn--ghost">Read More</a>
+          </div>
+          <div>
+            <img
+              src="images/dna-image.jpg"
+              alt="Woman looking at a model of DNA at a museum"
+              class="featured-section--image-1"
+            />
+          </div>
+        </section>
+
+        <section class="featured-section">
+          <div>
+            <img
+              src="images/micro-organism.jpg"
+              alt="Image of micro organisms"
+              class="featured-section--image-1"
+            />
+          </div>
+          <div class="featured-section-row exhibit-row">
+            <h1>Micro organisms: Life at a tiny scale</h1>
+            <p>
+              Dive into the microscopic world of bacteria, viruses, and other
+              tiny organisms that shape our world. Learn about the vital roles
+              microbes play in ecosystems, human health, and biotechnology.
+              Hands-on exhibits let you examine microbes up close and explore
+              their incredible diversity. See how understanding microorganisms
+              helps us combat disease and harness their power for innovation.
             </p>
             <a href="#" class="c-btn c-btn--ghost">Read More</a>
           </div>
@@ -86,114 +150,129 @@
       </div>
 
       <div class="test">
-        <section class="featured-section">
-          <div class="featured-section-row exhibit-row">
-            <h1>From Cells to Cure</h1>
-            <p>
-              For many people their life expectancy is much longer and their
-              quality of life much improved, thanks to the growth of our
-              understanding of medicine. Over a series of exhibits we explore
-              the history of medicine and take a look at some major
-              breakthroughs including the discovery of penicillin and the first
-              heart transplant.
-            </p>
-            <a href="#" class="c-btn c-btn--ghost">Read More</a>
+        <section>
+          <h1>See all exhibitions</h1>
+          <div class="container">
+            <div>
+              <img
+                src="images/medicine-history.jpg"
+                alt="Image of pills spread across a white surface"
+              />
+              <div>
+                <h2>The history of medicine</h2>
+                <p>Discover had medicine has developed over the years.</p>
+                <div></div>
+              </div>
+            </div>
+            <div>
+              <img
+                src="images/immunity.jpg"
+                alt="black and white image of a kid getting vaccine shot"
+              />
+              <div>
+                <h2>Immunity in action</h2>
+                <p>
+                  Learn how your body defends itself against disease every day.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="images/organs.jpg" alt="drawn image of organs" />
+              <div>
+                <h2>Organs in harmony</h2>
+                <p>
+                  Discover how organs work together to keep us alive and
+                  healthy.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img
-              src="images/rectangle.jpg"
-              alt="Woman looking at large standing lava lamps with bright colors"
-              class="featured-section--image-1"
-            />
+
+          <div class="container">
+            <div>
+              <img
+                src="images/brain-science-2.jpg"
+                alt="transparent model of a head with the brain on display"
+              />
+              <div>
+                <h2>The science of the brain</h2>
+                <p>
+                  Dive into the mysteries of the brain and its astonishing
+                  capabilities.
+                </p>
+                <div></div>
+              </div>
+            </div>
+            <div>
+              <img
+                src="images/medicine-innovation.jpg"
+                alt="luqiud in a lab glass"
+              />
+              <div>
+                <h2>Life saving innovations</h2>
+                <p>
+                  Explore cutting-edge medical technologies saving lives today
+                  and tomorrow.
+                </p>
+              </div>
+            </div>
           </div>
+          <a href="#" class="c-btn c-btn--ghost">See all</a>
         </section>
       </div>
-
-      <div class="test">
-        <section class="featured-section">
-          <div>
-            <img
-              src="images/rectangle.jpg"
-              alt="Woman looking at large standing lava lamps with bright colors"
-              class="featured-section--image-1"
-            />
-          </div>
-          <div class="featured-section-row exhibit-row">
-            <h1>From Cells to Cure</h1>
-            <p>
-              For many people their life expectancy is much longer and their
-              quality of life much improved, thanks to the growth of our
-              understanding of medicine. Over a series of exhibits we explore
-              the history of medicine and take a look at some major
-              breakthroughs including the discovery of penicillin and the first
-              heart transplant.
-            </p>
-            <a href="#" class="c-btn c-btn--ghost">Read More</a>
-          </div>
-        </section>
-      </div>
-
-      <section>
-        <h1>See all exhibitions</h1>
-        <div class="container">
-          <div>
-            <img src="images/arab_traders.jpg" alt="" />
-            <div>
-              <h3>From cells to cures</h3>
-              <p>
-                Touch, build, and experiment with our interactive exhibits
-                designed for curious minds
-              </p>
-              <div></div>
-            </div>
-          </div>
-          <div>
-            <img src="images/arab_traders.jpg" alt="" />
-            <div>
-              <h3>From cells to cures</h3>
-              <p>
-                Touch, build, and experiment with our interactive exhibits
-                designed for curious minds
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src="images/arab_traders.jpg" alt="" />
-            <div>
-              <h3>From cells to cures</h3>
-              <p>
-                Touch, build, and experiment with our interactive exhibits
-                designed for curious minds
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div>
-            <img src="images/arab_traders.jpg" alt="" />
-            <div>
-              <h3>From cells to cures</h3>
-              <p>
-                Touch, build, and experiment with our interactive exhibits
-                designed for curious minds
-              </p>
-              <div></div>
-            </div>
-          </div>
-          <div>
-            <img src="images/arab_traders.jpg" alt="" />
-            <div>
-              <h3>From cells to cures</h3>
-              <p>
-                Touch, build, and experiment with our interactive exhibits
-                designed for curious minds
-              </p>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="c-btn c-btn--ghost">See all</a>
-      </section>
     </main>
   </body>
+  <footer>
+    <section>
+      <div>
+        <h2>Community Science Museum</h2>
+        <p>Storgata 26, 0622</p>
+        <p>Oslo</p>
+        <p>info@community-museum.com</p>
+      </div>
+
+      <div>
+        <h3>Organisation number</h3>
+        <p>998076480</p>
+      </div>
+
+      <div>
+        <h3>Newsletter</h3>
+        <p>Sign up for our newsletter</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="footer-hours">
+        <h3>Hours</h3>
+        <p>Monday: Closed</p>
+        <p>Tuesday: 10:00 - 16:00</p>
+        <p>Wednesday: 10:00 - 16:00</p>
+        <p>Thursday: 10:00 - 16:00</p>
+        <p>Friday: 10:00 - 19:00</p>
+        <p>Saturday: 9:00 - 16:00</p>
+        <p>Sunday: 9:00 - 13:00</p>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Sponsors</p>
+        <p>Press</p>
+        <p>Internship</p>
+        <p>Research</p>
+        <p>Donate</p>
+      </div>
+      <div>
+        <h3>Follow us:</h3>
+        <p>Instagram</p>
+        <p>Facebook</p>
+        <p>Snapchat</p>
+        <p>Tik Tok</p>
+        <p>Twitter</p>
+      </div>
+    </section>
+  </footer>
 </html>

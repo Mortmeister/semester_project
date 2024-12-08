@@ -52,6 +52,8 @@
 
 /* Global */
 
+/* Header */
+
 header {
   display: flex;
   align-items: center;
@@ -70,6 +72,36 @@ header > nav {
 
 header > nav a {
   text-decoration: none;
+}
+
+.sub-nav {
+  overflow: hidden;
+}
+
+.sub-nav-content {
+  display: none;
+  position: absolute;
+  background-color: var(--light-grey);
+  z-index: 100;
+}
+
+.sub-nav:hover .sub-nav-content {
+  display: block;
+}
+
+.sub-nav-content a {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-btn {
+  font-size: 33px;
+  font-family: "nunito", "poppins";
+  border: none;
+  background-color: transparent;
+  color: var(--dark-grey);
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -105,9 +137,10 @@ h6 {
 
 h1 {
   font-size: var(--xl);
+  text-align: center;
 }
 h2 {
-  font-size: var(--l);
+  font-size: var(--small);
   color: var(--dark-grey);
   font-weight: 300;
 }
@@ -159,6 +192,8 @@ body {
 .featured-section--image-1 {
   width: 100%;
   height: 100%;
+  max-height: 420px;
+  object-fit: cover;
 }
 
 .featured-section--image-2 {
@@ -174,24 +209,53 @@ body {
   padding: 60px 60px 0px 60px;
 }
 
+.featured-section-row > h1 {
+  text-align: left;
+  font-size: var(--medium);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.featured-section-row > p {
+  padding: 0 25px;
+  line-height: 2;
+  letter-spacing: 0.3px;
+  font-size: var(--xs);
+}
+
 .featured-events {
   display: flex;
   gap: 25px;
   margin-top: 50px;
   padding: 0px 60px;
+  justify-content: center;
 }
 
 .featured-events-column {
   display: flex;
-  width: calc(100% / 3);
+  width: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
 .featured-events-column > a {
   margin-top: 20px;
+  text-decoration: none;
+}
+
+.featured-events-column * > h2 {
+  font-size: var(--small);
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  line-height: 25px;
+  margin: 10px 0 8px;
+}
+
+.featured-events-column * > p {
+  line-height: 1.3;
+  margin: 0;
 }
 
 .featured-events-image {
@@ -199,12 +263,16 @@ body {
   height: 100%;
 }
 
+.featured-events-image:hover {
+  filter: grayscale(50%);
+}
+
 .featured-about {
   position: relative;
 }
 
 .about-banner {
-  max-height: 650px;
+  max-height: 500px;
   position: relative;
   z-index: 50;
 }
@@ -230,20 +298,42 @@ body {
 .about-container {
   z-index: 100;
   background-color: var(--light-grey);
-  padding: 0 60px;
+  padding: 20px 110px;
 }
 
 .about-container > p {
-  font-size: 32px;
+  font-size: 23px;
   margin-bottom: 0;
+  line-height: 2;
+}
+
+.featured-exhibit-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+.featured-exhibit-row > a {
+  width: calc(100% / 5);
+  text-decoration: none;
+}
+
+.featured-exhibit-row * > div {
+  aspect-ratio: 1;
+}
+
+.featured-exhibit-row * > p {
+  text-align: center;
 }
 
 /* Explore page */
 
 .circle-container {
   display: flex;
+  justify-content: center;
   margin-top: 100px;
-  gap: 25px;
+  gap: 65px;
   padding: 0 60px;
 }
 
@@ -256,11 +346,22 @@ body {
   border-radius: 50%;
   height: 100%;
   width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.explore-featured {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .explore-featured > h1 {
   text-align: center;
   margin-top: 100px;
+  text-transform: capitalize;
+  font-style: italic;
 }
 
 .grid-card {
@@ -337,10 +438,31 @@ body {
   padding: 0 20px;
 }
 
-/* Exhibit - Biology and Medicine */
+/* Exhibit */
 
 .biology-hero {
   background-image: url("../images/biology-banner.jpg");
+}
+
+.ecology-hero {
+  background-image: url("../images/ecology-hero.jpg");
+  background-position-y: bottom;
+}
+
+.evolution-hero {
+  background-image: url("../images/evolution-banner.jpg");
+}
+
+.robotics-hero {
+  background-image: url("../images/robotics-banner.jpg");
+}
+
+.cosmology-hero {
+  background-image: url("../images/cosmology-hero.jpg");
+  background-position-y: bottom;
+}
+
+.exhibit-hero {
   height: 80dvh;
   width: 100%;
   background-size: cover;
@@ -350,13 +472,13 @@ body {
   justify-content: center;
 }
 
-.biology-hero > p {
+.exhibit-hero > p {
   max-width: 63%;
 }
 
-.biology-hero > h1,
-h3,
-p {
+.exhibit-hero > h1,
+.exhibit-hero > p,
+.exhibit-hero > h2 {
   color: var(--light-grey);
   font-weight: 200;
 }
@@ -366,7 +488,6 @@ p {
 }
 
 .exhibit-row > p,
-h2,
 a {
   color: var(--dark-grey);
 }
@@ -386,26 +507,35 @@ a {
 .container > div {
   background-color: var(--bright-yellow);
   text-align: center;
+  width: 100%;
 }
 
-.container > div h3,
-div p {
+.container > div h2,
+.container > div p {
   color: var(--dark-grey);
 }
 
-.container > div h3 {
-  font-weight: 500;
-  font-size: 33px;
+.container > div h2 {
+  font-weight: 700;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.container > div p {
+  margin-top: 0;
 }
 
 .container > div img {
   width: 100%;
+  max-height: 276px;
+  object-fit: cover;
 }
 
 /* Visit */
 
 .visit-banner > img {
-  max-height: 80dvh;
+  max-height: 500px;
   width: 100%;
   object-fit: cover;
 }
@@ -447,6 +577,19 @@ div p {
 
 /* events */
 
+.events-banner {
+  background-image: url("../images/event-banner.jpg");
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events-banner > h1 {
+  color: var(--light-grey);
+}
+
 .event-column {
   align-items: center;
 }
@@ -472,7 +615,7 @@ div p {
 }
 
 .contact-page > p,
-h3 {
+.contact-page > h3 {
   color: var(--dark-grey);
 }
 
@@ -519,4 +662,67 @@ button {
 .wrapper > h1,
 .wrapper > h2 {
   text-align: center;
+}
+
+/* Support page */
+
+.support-banner {
+  background-image: url("../images/support.jpg");
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support-banner > h1 {
+  text-align: center;
+  color: var(--light-grey);
+}
+
+.support-section {
+  display: flex;
+  gap: 25px;
+}
+
+.support-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.support-card img {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  background-color: var(--dark-grey);
+}
+
+footer * > h3,
+footer * > p {
+  color: var(--light-grey);
+}
+
+footer * > h3 {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+footer > section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  padding: 60px;
+}
+
+.footer-hours {
+  line-height: 3;
+  text-align: center;
+}
+
+footer > section {
+  border-right: solid;
 }

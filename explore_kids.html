@@ -9,7 +9,7 @@
     />
     <meta name="author" content="Morten Lillehaug" />
     <meta name="description" content="For kids to explore the museum " />
-    <title>Explore |For kids</title>
+    <title>Explore | For kids</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,15 +25,33 @@
   <body>
     <header>
       <div>
-        <img src="images/logo.png" alt="logo of the museum" />
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo of the museum" />
+        </a>
       </div>
       <nav>
         <a href="index.html">Home</a>
-        <a href="exhibits.html">Exhibits</a>
+        <div class="sub-nav">
+          <button class="header-btn">Exhibits</button>
+          <div class="sub-nav-content">
+            <a href="exhibit_biology.html">Biology and Medicine</a>
+            <a href="exhibit_cosmology.html">Cosmology</a>
+            <a href="exhibit_ecology.html">Ecology</a>
+            <a href="exhibit_evolution.html">Evolution</a>
+            <a href="exhibit_robotics_ai.html">Robotics and AI</a>
+          </div>
+        </div>
         <a href="visit.html">Visit</a>
         <a href="events.html">Events</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <div class="sub-nav">
+          <button class="header-btn">Explore</button>
+          <div class="sub-nav-content">
+            <a href="explore_kids.html">For Kids</a>
+            <a href="#">For Teachers</a>
+            <a href="#">For Researchers</a>
+          </div>
+        </div>
+        <a href="support.html">Support</a>
       </nav>
     </header>
     <main>
@@ -45,7 +63,7 @@
         />
         <div class="featured-grid">
           <img
-            src="images/reading_kid.jpg"
+            src="images/staring-kid.jpg"
             alt="Image of a child reading a book"
             class="featured-image"
           />
@@ -70,92 +88,149 @@
               Each holiday we pick a new theme to explore. To find out more
               about the holiday club and how you can join, send us a message.
             </p>
+            <section class="circle-container">
+              <div>
+                <img
+                  src="images/mammoth-1257288_1920.jpg"
+                  alt="Circular image of a mammoth skeleton"
+                  class="rounded-image"
+                />
+                <p>Meet Woolly the mammoth!</p>
+              </div>
+              <div>
+                <img
+                  src="images/scientific.jpg"
+                  alt="Circular image of a scientific experiment in front of a large machine"
+                  class="rounded-image"
+                />
+                <p>Young stars club</p>
+              </div>
+              <div>
+                <img
+                  src="images/teacher-2816112.jpg"
+                  alt="smiling animated lady waving"
+                  class="rounded-image"
+                />
+                <p>Special Holiday Club</p>
+              </div>
+            </section>
           </div>
         </div>
       </section>
 
-      <section class="circle-container">
-        <div>
-          <img
-            src="images/mammoth-1257288_1920.jpg"
-            alt="Image of a mammoth skeleton"
-            class="rounded-image"
-          />
-          <p>Meet Woolly the mammoth!</p>
-        </div>
-        <div>
-          <img
-            src="images/mammoth-1257288_1920.jpg"
-            alt=""
-            class="rounded-image"
-          />
-          <p>Young stars club</p>
-        </div>
-        <div>
-          <img
-            src="images/mammoth-1257288_1920.jpg"
-            alt=""
-            class="rounded-image"
-          />
-          <p>Special Holiday Club</p>
-        </div>
-      </section>
+      <div class="test">
+        <section class="explore-featured">
+          <h1>Fun activites and exhibitions at the museum</h1>
 
-      <section class="explore-featured">
-        <h1>Fun activites and exhibitions at the museum</h1>
-
-        <div class="grid-card">
-          <img
-            src="images/night-at-the-museum.jpg"
-            alt="Kids with sleeping bags in front of a dinosaur"
-          />
-          <div class="grid-card-column">
-            <h2>Night at the museum</h2>
-            <p>
-              Spend a thrilling night with your family in the museum! Sleep
-              among dinosaurs and dazzling science displays as you explore the
-              museum after dark. Bring your sleeping bag and get ready for
-              thrilling night-time activities, hands-on experiments, and stories
-              under the stars. Perfect for families and curious young minds!”
-            </p>
-            <a href="index.html" class="c-btn">Register now</a>
+          <div class="grid-card">
+            <img
+              src="images/night-at-the-museum.jpg"
+              alt="Kids with sleeping bags in front of a dinosaur"
+            />
+            <div class="grid-card-column">
+              <h2>Night at the museum</h2>
+              <p>
+                Spend a thrilling night with your family in the museum! Sleep
+                among dinosaurs and dazzling science displays as you explore the
+                museum after dark. Bring your sleeping bag and get ready for
+                thrilling night-time activities, hands-on experiments, and
+                stories under the stars. Perfect for families and curious young
+                minds!”
+              </p>
+              <a href="index.html" class="c-btn">Register now</a>
+            </div>
           </div>
-        </div>
-        <div class="grid-card">
-          <img
-            src="images/night-at-the-museum.jpg"
-            alt="Kids with sleeping bags in front of a dinosaur"
-          />
-          <div class="grid-card-column">
-            <h2>Night at the museum</h2>
-            <p>
-              Spend a thrilling night with your family in the museum! Sleep
-              among dinosaurs and dazzling science displays as you explore the
-              museum after dark. Bring your sleeping bag and get ready for
-              thrilling night-time activities, hands-on experiments, and stories
-              under the stars. Perfect for families and curious young minds!”
-            </p>
-            <a href="index.html" class="c-btn">Register now</a>
+          <div class="grid-card">
+            <img
+              src="images/night-at-the-museum.jpg"
+              alt="Kids with sleeping bags in front of a dinosaur"
+            />
+            <div class="grid-card-column">
+              <h2>Night at the museum</h2>
+              <p>
+                Spend a thrilling night with your family in the museum! Sleep
+                among dinosaurs and dazzling science displays as you explore the
+                museum after dark. Bring your sleeping bag and get ready for
+                thrilling night-time activities, hands-on experiments, and
+                stories under the stars. Perfect for families and curious young
+                minds!”
+              </p>
+              <a href="index.html" class="c-btn">Register now</a>
+            </div>
           </div>
-        </div>
-        <div class="grid-card">
-          <img
-            src="images/night-at-the-museum.jpg"
-            alt="Kids with sleeping bags in front of a dinosaur"
-          />
-          <div class="grid-card-column">
-            <h2>Night at the museum</h2>
-            <p>
-              Spend a thrilling night with your family in the museum! Sleep
-              among dinosaurs and dazzling science displays as you explore the
-              museum after dark. Bring your sleeping bag and get ready for
-              thrilling night-time activities, hands-on experiments, and stories
-              under the stars. Perfect for families and curious young minds!”
-            </p>
-            <a href="index.html" class="c-btn">Register now</a>
+          <div class="grid-card">
+            <img
+              src="images/night-at-the-museum.jpg"
+              alt="Kids with sleeping bags in front of a dinosaur"
+            />
+            <div class="grid-card-column">
+              <h2>Night at the museum</h2>
+              <p>
+                Spend a thrilling night with your family in the museum! Sleep
+                among dinosaurs and dazzling science displays as you explore the
+                museum after dark. Bring your sleeping bag and get ready for
+                thrilling night-time activities, hands-on experiments, and
+                stories under the stars. Perfect for families and curious young
+                minds!”
+              </p>
+              <a href="index.html" class="c-btn">Register now</a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
+    <footer>
+      <section>
+        <div>
+          <h3>Community Science Museum</h3>
+          <p>Storgata 26, 0622</p>
+          <p>Oslo</p>
+          <p>info@community-museum.com</p>
+        </div>
+
+        <div>
+          <h3>Organisation number</h3>
+          <p>998076480</p>
+        </div>
+
+        <div>
+          <h3>Newsletter</h3>
+          <p>Sign up for our newsletter</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="footer-hours">
+          <h3>Hours</h3>
+          <p>Monday: Closed</p>
+          <p>Tuesday: 10:00 - 16:00</p>
+          <p>Wednesday: 10:00 - 16:00</p>
+          <p>Thursday: 10:00 - 16:00</p>
+          <p>Friday: 10:00 - 19:00</p>
+          <p>Saturday: 9:00 - 16:00</p>
+          <p>Sunday: 9:00 - 13:00</p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>Sponsors</p>
+          <p>Press</p>
+          <p>Internship</p>
+          <p>Research</p>
+          <p>Donate</p>
+        </div>
+        <div>
+          <h3>Follow us:</h3>
+          <p>Instagram</p>
+          <p>Facebook</p>
+          <p>Snapchat</p>
+          <p>Tik Tok</p>
+          <p>Twitter</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
