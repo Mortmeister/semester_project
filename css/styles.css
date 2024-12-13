@@ -536,8 +536,8 @@ body {
 }
 
 .featured-section > div {
-  /* padding: 20px;
-  margin: 0 2rem; */
+  padding: 20px;
+  margin: 0 2rem;
   flex: 0 0 calc(50% - 60px);
 }
 
