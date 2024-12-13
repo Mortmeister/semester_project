@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="keywords"
-      content="museum, science, dinosaurs, explore, ai, vr, space, biology"
+      content="museum, exhibit, technology, robotics, ai, experiment, laboratory"
     />
     <meta name="author" content="Morten Lillehaug" />
     <meta
       name="description"
-      content="home page of the community science museum"
+      content="Exhibition page with the subject Ecology"
     />
-    <title>Home Page</title>
+    <title>Exhibit | Robotics and AI</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,20 +20,34 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+      integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header>
+    <header class="header-mobile">
       <div>
         <a href="index.html">
           <img src="images/logo.png" alt="logo of the museum" />
         </a>
       </div>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
       <nav>
         <a href="index.html">Home</a>
         <div class="sub-nav">
@@ -52,341 +66,220 @@
           <button class="header-btn">Explore</button>
           <div class="sub-nav-content">
             <a href="explore_kids.html">For Kids</a>
-            <a href="#">For Teachers</a>
-            <a href="#">For Researchers</a>
+            <a href="explore_teachers.html">For Teachers</a>
+            <a href="explore_researchers.html">For Researchers</a>
           </div>
         </div>
         <a href="support.html">Support</a>
       </nav>
     </header>
-    <section class="hero-banner-1" title="image of the museum library">
-      <h1>The community</h1>
-      <h1><span class="big-font">science museum</span></h1>
-    </section>
-    <!-- <div class="test">
-      <h1>Events</h1>
-
-      <section class="featured-events">
-        <div class="featured-events-column">
-          <a href="events.html">
-            <div>
-              <img
-                src="images/professor.jpg"
-                alt="Image of a black jet plane inside a hangar"
-                class="featured-events-image"
-              />
-              <h2>Visiting professor of Aueronautics</h2>
-              <p>
-                Professor Sheila Widnall from MIT presents a series of
-                fascinating lectures on the history and future of aeronautics.
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <div class="featured-events-column">
-          <a href="">
-            <div>
-              <img
-                src="images/night-at-the-museum.jpg"
-                alt="Kids with sleeping bags in front of a dinosaur"
-                class="featured-events-image"
-              />
-              <h2>Night at the museum</h2>
-              <p>
-                Spend a thrilling night with your family in the museum! Sleep
-                among dinosaurs and explore science in the dark.
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <div class="featured-events-column">
-          <a href="">
-            <div>
-              <img
-                src="images/energetica.jpg"
-                alt="A woman looking at large lava lamps at an exhibition"
-                class="featured-events-image"
-              />
-              <h2>Energetica Exhibition</h2>
-
-              <p>
-                Experience the power of the elements in this stunning exhibition
-                from the NEMO Science Museum.
-              </p>
-            </div>
-          </a>
-        </div>
+    <main>
+      <section class="robotics-hero exhibit-hero">
+        <h2>Exhibits - Robotics and AI</h2>
+        <h1>Robotics and AI</h1>
+        <p>
+          The information revolution is here and robotics and artificial
+          intelligence are the science of the future. From useful home
+          applications of AI to industrial uses of robotics, the future is here.
+          You can even say hello and shake the hand of Rob the Robot.
+        </p>
       </section>
-    </div>
 
-    <div class="test">
-      <h1>Exhibits</h1>
-
-      <section class="featured-events">
-        <div class="featured-events-column">
-          <a href="events.html">
+      <div class="test">
+        <section>
+          <h1>Exhibits</h1>
+          <div class="featured-section">
             <div>
               <img
-                src="images/cosmic-journey.jpg"
-                alt="Image of a black jet plane inside a hangar"
-                class="featured-events-image"
+                src="images/robots-rise.jpg"
+                alt="A smiling robot with an ipad on the chest"
+                class="featured-section--image-1"
               />
-              <h2>Visiting professor of Aueronautics</h2>
+            </div>
+            <div class="featured-section-row exhibit-row">
+              <h1>The Rise of Robots</h1>
               <p>
-                Professor Sheila Widnall from MIT presents a series of
-                fascinating lectures on the history and future of aeronautics.
+                Discover the evolution of robots, from simple mechanical devices
+                to today’s complex machines. Learn how robots are transforming
+                industries like manufacturing, healthcare, and space
+                exploration. Interactive exhibits let you control robotic arms
+                and explore real-world applications. See how robotics bridges
+                imagination and innovation to solve modern challenges.
               </p>
+              <a href="#" class="c-btn c-btn--ghost">Read More</a>
             </div>
-          </a>
-        </div>
-
-        <div class="featured-events-column">
-          <a href="">
-            <div>
-              <img
-                src="images/exploring-frontier.jpg"
-                alt="Kids with sleeping bags in front of a dinosaur"
-                class="featured-events-image"
-              />
-              <h2>Night at the museum</h2>
-              <p>
-                Spend a thrilling night with your family in the museum! Sleep
-                among dinosaurs and explore science in the dark.
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <div class="featured-events-column">
-          <a href="">
-            <div>
-              <img
-                src="images/giants.jpg"
-                alt="A woman looking at large lava lamps at an exhibition"
-                class="featured-events-image"
-              />
-              <h2>Energetica Exhibition</h2>
-
-              <p>
-                Experience the power of the elements in this stunning exhibition
-                from the NEMO Science Museum.
-              </p>
-            </div>
-          </a>
-        </div>
-      </section>
-    </div> -->
-
-    <section class="hero-banner-1" title="image of the museum library">
-      <h1>The community</h1>
-      <h1><span class="big-font">science museum</span></h1>
-    </section>
-
-    <div class="test">
-      <section>
-        <h1>Explore exhibition spaces</h1>
-        <div class="featured-exhibit-row">
-          <a href="exhibits.html">
-            <div>
-              <img
-                src="images/cosmology.jpg"
-                alt="a man sitting in a machine with austronaut suit"
-                class="rounded-image"
-              />
-              <p>Biology and Medicine</p>
-            </div>
-          </a>
-          <a href="exhibit_biology.html">
-            <div>
-              <img
-                src="images/evolution.jpg"
-                alt="large skeleton head of a dinosaur"
-                class="rounded-image"
-              />
-              <p>Cosmology</p>
-            </div>
-          </a>
-          <a href="">
-            <div>
-              <img
-                src="images/robotics-and-ai.jpg"
-                alt="A boy wearing viritual reality goggles"
-                class="rounded-image"
-              />
-              <p>Ecology</p>
-            </div>
-          </a>
-          <a href="">
-            <div>
-              <img src="images/scientific.jpg" alt="" class="rounded-image" />
-              <p>Evolution</p>
-            </div>
-          </a>
-          <a href="">
-            <div>
-              <img src="images/scientific.jpg" alt="" class="rounded-image" />
-              <p>Robotics and AI</p>
-            </div>
-          </a>
-        </div>
-      </section>
-    </div>
-
-    <div class="test">
-      <section class="visit-container">
-        <div class="hours">
-          <h2>
-            Come join us at the Community Science Museum where we’re committed
-            to making science accessible to all!
-          </h2>
-        </div>
-
-        <div class="admission">
-          <a href="" class="c-btn">Plan your visit</a>
-          <a href="" class="c-btn c-btn--ghost">Explore exhibits</a>
-        </div>
-      </section>
-    </div>
-
-    <h1>Events</h1>
-    <div class="container">
-      <div>
-        <img
-          src="images/rainforest.jpg"
-          alt="image of a rainforest clouded in fog"
-        />
-        <div>
-          <h2>Rainforest Wonders</h2>
-          <p>
-            Journey into lush rainforests and uncover their incredible
-            biodiversity.
-          </p>
-          <div></div>
-        </div>
-      </div>
-      <div>
-        <img
-          src="images/beneath-ocean.jpg"
-          alt="colorful fish swimming in coral reef"
-        />
-        <div>
-          <h2>Beneath the Waves: Ocean Ecosystems</h2>
-          <p>Explore the hidden depths of oceans and the life they harbor.</p>
-        </div>
-      </div>
-      <div>
-        <img src="images/desert.jpg" alt="A sand dune in the desert" />
-        <div>
-          <h2>Deserts and Survival</h2>
-          <p>
-            Witness the resilience of life in Earth’s most extreme environments.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="test">
-      <section class="featured-about">
-        <img
-          src="images/scott-webb-102825.jpg"
-          alt="Image of the museum from the outside"
-          class="about-banner"
-        />
-        <div class="featured-grid">
-          <img
-            src="images/toa-heftiba-412579.jpg"
-            alt="Image of the museum from the outside"
-            class="featured-image"
-          />
-          <div class="about-container">
-            <h1>About the museum</h1>
-            <p>
-              Over the course of human history, science has developed from our
-              early understanding of fire, wind, water, and earth to exploring
-              everything from galaxies far away to the very building blocks of
-              life itself.
-            </p>
-            <p>
-              The aim of our museum is to create a space where everyone can
-              experience the wonders of our discoveries and perhaps even ignite
-              a lifelong passion to continue the exploration of the world around
-              us.
-            </p>
-            <p>
-              We believe science should not be confined to the textbook, but
-              brought to live through exhibits. This is why we have over 1000
-              different exhibits on the many varied subjects of science to
-              explore. Many of these exhibits are designed for you to interact
-              with and play around to see science come to life (apart from the
-              dinosaur exhibits – they only come to life at night when
-              everyone’s gone home).
-            </p>
           </div>
+
+          <div class="featured-section">
+            <div class="featured-section-row exhibit-row">
+              <h1>Artificial Intelligence: Friend or Foe?</h1>
+              <p>
+                Explore the incredible capabilities of artificial intelligence
+                and its impact on our lives. Learn about AI’s ability to process
+                data, recognize patterns, and even make decisions. Engage with
+                thought-provoking exhibits on ethical dilemmas and the future of
+                AI. Discover how researchers are designing AI to benefit
+                humanity while addressing its challenges.
+              </p>
+              <a href="#" class="c-btn c-btn--ghost">Read More</a>
+            </div>
+            <div>
+              <img
+                src="images/ai-friend-foe.jpg"
+                alt="A little girl holding hands with a robot"
+                class="featured-section--image-1"
+              />
+            </div>
+          </div>
+
+          <div class="featured-section">
+            <div>
+              <img
+                src="images/robotics-everyday.jpg"
+                alt="Automated production with robot arms"
+                class="featured-section--image-1"
+              />
+            </div>
+            <div class="featured-section-row exhibit-row">
+              <h1>Robotics in Everyday Life</h1>
+              <p>
+                See how robots are seamlessly integrated into our daily
+                routines, from smart home assistants to autonomous vehicles.
+                Interactive displays let you explore robotic technologies that
+                simplify tasks and improve safety. Learn how robots are used in
+                education, healthcare, and disaster response. Experience the
+                possibilities of a future powered by robotics in every aspect of
+                life.
+              </p>
+              <a href="#" class="c-btn c-btn--ghost">Read More</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="test">
+        <section>
+          <h1>See all exhibitions</h1>
+          <div class="container">
+            <div>
+              <img
+                src="images/machines-think.jpg"
+                alt="Wall-E the robot with a plant in his hand"
+              />
+              <div>
+                <h2>Machines That Think</h2>
+                <p>
+                  Explore how AI mimics human intelligence to solve complex
+                  problems.
+                </p>
+                <div></div>
+              </div>
+            </div>
+            <div>
+              <img
+                src="images/future-automation.jpg"
+                alt="A robot on a bench reading"
+              />
+              <div>
+                <h2>The Future of Automation</h2>
+                <p>
+                  Look ahead to a world where automation changes the way we live
+                  and work.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="images/robots-medicine.jpg"
+                alt="Automated production of luqid medicine"
+              />
+              <div>
+                <h2>Robots in Medicine</h2>
+                <p>
+                  Witness the revolutionary role robots play in saving lives.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="images/science-fiction.jpg"
+                alt="A guy wearing with vr goggles and control pads in hand"
+              />
+              <div>
+                <h2>From Science Fiction to Reality</h2>
+                <p>
+                  Discover how science fiction inspires real-world robotics.
+                </p>
+                <div></div>
+              </div>
+            </div>
+            <div>
+              <img
+                src="images/humanoids-beyond.jpg"
+                alt="A robot playing the piano"
+              />
+              <div>
+                <h2>Humanoids and Beyond</h2>
+                <p>Meet robots designed to look and interact just like us.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="c-btn c-btn--ghost">See all</a>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <div>
+          <h3>Community Science Museum</h3>
+          <p>Storgata 26, 0622</p>
+          <p>Oslo</p>
+          <p>info@community-museum.com</p>
+        </div>
+
+        <div>
+          <h3>Organisation number</h3>
+          <p>998076480</p>
+        </div>
+
+        <div>
+          <h3>Newsletter</h3>
+          <p>Sign up for our newsletter</p>
         </div>
       </section>
-    </div>
 
-    <div class="test">
-      <h1>Exhibits</h1>
-
-      <section class="featured-events">
-        <div class="featured-events-column">
-          <a href="events.html">
-            <div>
-              <img
-                src="images/professor.jpg"
-                alt="Image of a black jet plane inside a hangar"
-                class="featured-events-image"
-              />
-              <h2>Visiting professor of Aueronautics</h2>
-              <p>
-                Professor Sheila Widnall from MIT presents a series of
-                fascinating lectures on the history and future of aeronautics.
-              </p>
-            </div>
-            <!-- <a href="#" class="c-btn">Learn More</a> -->
-          </a>
-        </div>
-
-        <div class="featured-events-column">
-          <a href="">
-            <div>
-              <img
-                src="images/night-at-the-museum.jpg"
-                alt="Kids with sleeping bags in front of a dinosaur"
-                class="featured-events-image"
-              />
-              <h2>Night at the museum</h2>
-              <p>
-                Spend a thrilling night with your family in the museum! Sleep
-                among dinosaurs and explore science in the dark.
-              </p>
-            </div>
-          </a>
-          <!-- <a href="#" class="c-btn">Learn More</a> -->
-        </div>
-
-        <div class="featured-events-column">
-          <a href="">
-            <div>
-              <img
-                src="images/energetica.jpg"
-                alt="A woman looking at large lava lamps at an exhibition"
-                class="featured-events-image"
-              />
-              <h2>Energetica Exhibition</h2>
-
-              <p>
-                Experience the power of the elements in this stunning exhibition
-                from the NEMO Science Museum.
-              </p>
-              <!-- <a href="#" class="c-btn">Learn More</a> -->
-            </div>
-          </a>
+      <section>
+        <div class="footer-hours">
+          <h3>Hours</h3>
+          <p>Monday: Closed</p>
+          <p>Tuesday: 10:00 - 16:00</p>
+          <p>Wednesday: 10:00 - 16:00</p>
+          <p>Thursday: 10:00 - 16:00</p>
+          <p>Friday: 10:00 - 19:00</p>
+          <p>Saturday: 9:00 - 16:00</p>
+          <p>Sunday: 9:00 - 13:00</p>
         </div>
       </section>
-    </div>
+
+      <section>
+        <div>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>Sponsors</p>
+          <p>Press</p>
+          <p>Internship</p>
+          <p>Research</p>
+          <p>Donate</p>
+        </div>
+        <div>
+          <h3>Follow us:</h3>
+          <p>Instagram</p>
+          <p>Facebook</p>
+          <p>Snapchat</p>
+          <p>Tik Tok</p>
+          <p>Twitter</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
