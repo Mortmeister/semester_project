@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+      integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
+      crossorigin="anonymous"
+    />
     <link href="css/styles.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -15,12 +21,16 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header-mobile">
       <div>
         <a href="index.html">
           <img src="images/logo.png" alt="logo of the museum" />
         </a>
       </div>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
       <nav>
         <a href="index.html">Home</a>
         <div class="sub-nav">
@@ -39,8 +49,8 @@
           <button class="header-btn">Explore</button>
           <div class="sub-nav-content">
             <a href="explore_kids.html">For Kids</a>
-            <a href="#">For Teachers</a>
-            <a href="#">For Researchers</a>
+            <a href="explore_teachers.html">For Teachers</a>
+            <a href="explore_researchers.html">For Researchers</a>
           </div>
         </div>
         <a href="support.html">Support</a>

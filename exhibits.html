@@ -11,6 +11,12 @@
     <meta name="description" content="Explore exhibits at the museum" />
     <title>Explore exhibits</title>
     <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+      integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,12 +29,16 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header-mobile">
       <div>
         <a href="index.html">
           <img src="images/logo.png" alt="logo of the museum" />
         </a>
       </div>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
       <nav>
         <a href="index.html">Home</a>
         <div class="sub-nav">
@@ -47,8 +57,8 @@
           <button class="header-btn">Explore</button>
           <div class="sub-nav-content">
             <a href="explore_kids.html">For Kids</a>
-            <a href="#">For Teachers</a>
-            <a href="#">For Researchers</a>
+            <a href="explore_teachers.html">For Teachers</a>
+            <a href="explore_researchers.html">For Researchers</a>
           </div>
         </div>
         <a href="support.html">Support</a>
@@ -79,7 +89,7 @@
             <div class="exhibit-left-column">
               <div class="exhibit-info">
                 <h3>Evolution - Exhibit</h3>
-                <p>2. floor</p>
+                <p>Located at the 2. floor</p>
                 <a href="" class="c-btn c-btn--ghost">Book a guided tour</a>
                 <div class="audio-guide">
                   <h4>Audio guide</h4>
