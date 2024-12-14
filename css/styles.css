@@ -64,6 +64,194 @@
   justify-content: space-evenly;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bright-yellow);
+  gap: 43px;
+  padding: 0 48px 56px;
+  width: auto;
+}
+
+.exhibit-wrapper {
+  max-width: 1400px;
+}
+
+.flex-column img {
+  max-height: 700px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row > h1,
+.flex-row > h2 {
+  flex: 1;
+}
+
+.flex-row > h1 {
+  font-weight: 900;
+}
+
+.flex-row > h2 {
+  text-transform: none;
+}
+
+.audio-guide {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  max-width: 275px;
+  padding: 15px;
+}
+
+.exhibit-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.exhibit-info > p {
+  margin: 0;
+}
+
+.exhibit-right-column > p {
+  font-size: 19px;
+}
+
+.exhibit-left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.exhibit-info > h3 {
+  font-size: 29px;
+}
+
+.caurosel-wrapper {
+  position: relative;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.flex-column > p {
+  max-width: 768px;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+.slider {
+  display: flex;
+  /* aspect-ratio: 1/1; */
+  aspect-ratio: var(--ratio-golden);
+  overflow: hidden;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-3);
+  border: 1px var(--dark-grey) solid;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  width: 100%;
+}
+
+.slider-nav {
+  position: absolute;
+  bottom: 10%;
+  left: -16%;
+  transform: translateX(50%);
+  display: flex;
+  gap: 1rem;
+}
+
+.slider-nav a {
+  width: 7rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@media (width<=870px) {
+  .caurosel-wrapper {
+    max-width: 500px;
+  }
+
+  .slider-nav {
+    bottom: 1rem;
+    left: -24%;
+  }
+  .slider-nav a {
+    width: 5rem;
+    height: 3rem;
+  }
+}
+
+@media (width<=596px) {
+  .caurosel-wrapper {
+    max-width: 385px;
+  }
+
+  .slider-nav {
+    bottom: 1rem;
+    left: -29%;
+  }
+  .slider-nav a {
+    width: 4rem;
+    height: 3rem;
+  }
+}
+
+@media (width<=480px) {
+  .caurosel-wrapper {
+    max-width: 300px;
+  }
+
+  .slider-nav {
+    bottom: 1rem;
+    left: -31%;
+  }
+  .slider-nav a {
+    width: 51px;
+    height: 40px;
+  }
+}
+
+@media (width<=390px) {
+  .caurosel-wrapper {
+    max-width: 300px;
+  }
+
+  .slider-nav {
+    bottom: 1rem;
+    left: -39%;
+  }
+  .slider-nav a {
+    width: 51px;
+    height: 40px;
+  }
+
+  .slider-nav {
+    gap: 5px;
+  }
+}
+
 /* Header */
 
 header {
@@ -74,6 +262,7 @@ header {
   border-bottom: 1px solid black;
   position: sticky;
   top: 0;
+  z-index: 10000;
 }
 
 header > nav {
@@ -85,7 +274,8 @@ header > nav {
   font-family: "nunito", "poppins";
 }
 
-header > nav a {
+header > nav a,
+.container * > a {
   text-decoration: none;
 }
 
@@ -225,7 +415,7 @@ body {
 .featured-section {
   display: flex;
   margin: 0 -1rem;
-  max-height: 80dvh;
+  /* max-height: 80dvh; */
 }
 
 .featured-section > div {
@@ -685,8 +875,13 @@ a {
   padding: 50px;
   /* margin: 0 2rem; */
   gap: 50px;
-  background-color: var(--bright-yellow);
+  background-image: linear-gradient(var(--sky-blue), var(--bright-yellow));
   border: 1px var(--sky-blue) solid;
+}
+
+.visit-container > a {
+  grid-column: 2;
+  margin-right: auto;
 }
 
 .blue-container {
@@ -769,7 +964,7 @@ a {
 }
 
 .event-section {
-  margin: 3rem;
+  margin-top: 3rem;
 }
 
 .event-section > div {
@@ -799,12 +994,16 @@ a {
 
 .contact-flex {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form {
   box-shadow: var(--shadow-6);
   padding: 50px 100px;
   background-color: var(--bright-yellow);
+  background: linear-gradient(var(--sky-blue), var(--light-grey));
+  margin-top: 50px;
 }
 
 .form > h2 {
@@ -1008,6 +1207,10 @@ footer > section {
     align-items: center;
     width: 100%;
     text-align: center;
+  }
+
+  #menu-checkbox:checked ~ .hamburger-icon {
+    transform: rotate(90deg);
   }
 
   .hamburger-icon {
