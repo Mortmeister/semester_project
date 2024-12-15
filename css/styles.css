@@ -822,7 +822,7 @@ body {
 .exhibit-hero {
   height: 550px;
   width: 100%;
-  background-position-y: center;
+  background-position: center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -834,7 +834,8 @@ body {
   max-width: 63%;
 } */
 
-.exhibit-hero > h1 {
+.exhibit-hero > h1,
+.support-banner > h1 {
   font-size: 72px;
   color: var(--bright-yellow);
   -webkit-text-stroke: 1.5px black;
@@ -1005,6 +1006,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position: center center;
 }
 
 .events-banner > h1 {
@@ -1123,17 +1125,20 @@ button {
 /* Support page */
 
 .support-banner {
-  background-image: url("../images/support.jpg");
+  background-image: url("../images/colorful-museum.jpg");
   background-size: cover;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center center;
 }
 
 .support-banner > h1 {
-  text-align: center;
-  color: var(--light-grey);
+  color: var(--bright-yellow);
+  -webkit-text-stroke: 1px var(--sky-blue);
+  margin: 0;
+  text-shadow: 1px 1px black;
 }
 
 .support-section {
@@ -1154,6 +1159,7 @@ button {
 footer {
   display: flex;
   background-color: var(--dark-grey);
+  margin-top: 50px;
 }
 
 footer * > h3,
@@ -1213,7 +1219,9 @@ footer > section {
 
 @media (width <= 1024px) {
   .exhibit-hero,
-  .hero-banner-1 {
+  .hero-banner-1,
+  .visit-banner img,
+  .support-banner {
     height: 360px;
   }
 
