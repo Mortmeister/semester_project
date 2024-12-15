@@ -965,7 +965,6 @@ a {
 
 .blue-container {
   background-color: var(--sky-blue);
-  background-image: linear-gradient(var(--sky-blue), var(--bright-yellow));
   box-shadow: var(--shadow-2);
   border: 1px solid;
 }
