@@ -1,0 +1,1 @@
+Welcome to the my repository for the Community Science Museum Website! This project is a responsive, interactive website designed to inform and engage middle school students, families, and teachers about the exciting exhibits and events offered at the museum.
