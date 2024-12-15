@@ -100,7 +100,9 @@
 
 .flex-row > h1 {
   font-weight: 900;
-  -webkit-text-stroke: var(--pinkish-red) 0.7px;
+  font-size: 72px;
+  -webkit-text-stroke: var(--pinkish-red) 1px;
+  text-shadow: #fc0 1px 0 10px;
 }
 
 .flex-row > h2 {
@@ -123,7 +125,7 @@
   align-items: flex-start;
 }
 
-.exhibit-info > p {
+.exhibit-info-div > p {
   margin: 0;
   font-style: italic;
 }
@@ -139,7 +141,7 @@
   justify-content: center;
 }
 
-.exhibit-info > h3 {
+.exhibit-info-div > h3 {
   font-size: 29px;
 }
 
@@ -270,9 +272,17 @@ header {
   justify-content: space-between;
   background-color: var(--light-grey);
   border-bottom: 1px solid black;
+}
+
+.header-wrapper {
   position: sticky;
   top: 0;
   z-index: 10000;
+}
+
+.logo-img {
+  max-height: 84px;
+  padding: 7px;
 }
 
 header > nav {
@@ -289,6 +299,24 @@ header > nav a,
   text-decoration: none;
 }
 
+header nav > a:hover,
+.header-btn:hover,
+.sub-nav-content > a:hover {
+  font-style: italic;
+  color: var(--pinkish-red);
+  font-weight: 600;
+}
+
+.sub-nav-content > a:hover {
+  text-decoration: underline 3px var(--pinkish-red);
+}
+
+.header-btn:hover {
+  font-style: italic;
+  color: var(--pinkish-red);
+  font-weight: 600;
+}
+
 #menu-checkbox {
   display: none;
 }
@@ -303,12 +331,24 @@ header > nav a,
 .sub-nav-content {
   display: none;
   position: absolute;
+  top: 88px;
   background-color: var(--light-grey);
   z-index: 100;
+  padding: 10px;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
 }
 
-.sub-nav:hover .sub-nav-content {
-  display: block;
+.header-btn:focus + .sub-nav-content,
+.sub-nav:active .sub-nav-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sub-nav:has(.header-btn:focus) .fa-caret-down {
+  transform: rotate(270deg);
 }
 
 .sub-nav-content a {
@@ -317,7 +357,7 @@ header > nav a,
 }
 
 .header-btn {
-  font-size: 33px;
+  font-size: var(--m);
   font-family: "nunito", "poppins";
   border: none;
   background-color: transparent;
@@ -435,7 +475,7 @@ body {
   /* max-height: 80dvh; */
 }
 
-.kids-section {
+.explore-section {
   margin: 0;
 }
 
@@ -640,16 +680,15 @@ body {
 }
 
 .explore-banner > h1 {
-  font-size: 71px;
+  font-size: 72px;
   color: var(--bright-yellow);
-  -webkit-text-stroke: 1px var(--sky-blue);
+  -webkit-text-stroke: 1px var(--pinkish-red);
   text-shadow: 1px 1px black;
 }
 
 .circle-container {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
   gap: 65px;
   padding: 0 60px;
 }
@@ -657,6 +696,7 @@ body {
 .explore-kids-section > h2 {
   text-align: center;
   font-size: var(--l);
+  margin-bottom: 20px;
 }
 
 .circle-container > div {
@@ -682,9 +722,9 @@ body {
 
 .explore-featured > h1 {
   text-align: center;
-  margin-top: 100px;
   text-transform: capitalize;
   font-style: italic;
+  margin-bottom: 0;
 }
 
 .grid-card {
@@ -762,7 +802,7 @@ body {
   flex: 0 0 calc(50% - 60px);
 }
 
-.test {
+.margin-wrapper {
   margin-top: 150px;
   margin-bottom: 150px;
 }
@@ -792,8 +832,9 @@ body {
 }
 
 .exhibit-hero {
-  height: 720px;
+  height: 550px;
   width: 100%;
+  background-position-y: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -801,19 +842,31 @@ body {
   justify-content: center;
 }
 
-.exhibit-hero > p {
+/* .exhibit-hero > p {
   max-width: 63%;
-}
+} */
 
 .exhibit-hero > h1 {
+  font-size: 72px;
   color: var(--bright-yellow);
-  -webkit-text-stroke: 0.7px var(--sky-blue);
+  -webkit-text-stroke: 1.5px black;
 }
 
 .exhibit-hero > p,
 .exhibit-hero > h2 {
   color: var(--light-grey);
   font-weight: 200;
+}
+
+.exhibit-row > h2 {
+  margin: 0;
+  align-self: flex-start;
+}
+
+.exhibit-hero > h3 {
+  margin-right: auto;
+  padding-left: 25px;
+  padding-bottom: 94px;
 }
 
 .exhibit-row {
@@ -870,11 +923,12 @@ a {
   color: var(--dark-grey);
 }
 
-.container > div h2 {
+.container > div h3 {
   font-weight: 700;
   font-style: italic;
   text-transform: capitalize;
   margin-bottom: 8px;
+  font-size: var(--small);
 }
 
 .container > div p {
@@ -970,6 +1024,7 @@ a {
   -webkit-text-stroke: 1px var(--sky-blue);
   margin: 0;
   text-shadow: 1px 1px black;
+  font-size: 72px;
 }
 
 .event-column {
@@ -1217,28 +1272,46 @@ footer > section {
     max-height: 89px;
   }
 
-  .header-logo,
+  /* .header-logo,
   .header-logo--nav {
     max-height: 50px;
-  }
+  } */
 
   header nav a {
-    border: solid 1px var(--dark-grey);
     width: 100%;
     border-radius: 5px;
-    font-size: var(--header-font-size);
+    font-size: var(--m);
+    font-weight: 700;
+  }
+
+  .header-btn {
+    font-weight: 700;
+  }
+
+  header nav a:hover,
+  .header-btn:hover,
+  .header-wrapper:has(#menu-checkbox:checked) header {
+    background-color: var(--bright-yellow);
   }
 
   #menu-checkbox:checked ~ nav {
     display: flex;
     flex-direction: column;
+    gap: 5px;
     align-items: center;
     width: 100%;
     text-align: center;
+    background-color: var(--bright-yellow);
+    border: 1px solid var(--dark-grey);
   }
 
   #menu-checkbox:checked ~ .hamburger-icon {
     transform: rotate(90deg);
+  }
+
+  .header-btn:focus + .sub-nav-content,
+  .sub-nav:active .sub-nav-content {
+    background-color: var(--bright-yellow);
   }
 
   .hamburger-icon {
@@ -1253,7 +1326,7 @@ footer > section {
     position: absolute;
     z-index: 1000;
     right: 0px;
-    top: 138px;
+    top: 88px;
     gap: 0;
   }
 
@@ -1266,9 +1339,14 @@ footer > section {
   }
 
   .visit-container {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
+  }
+
+  .hours,
+  .admission {
+    margin-right: 0;
   }
 
   .visit-container * > h2 {
@@ -1286,6 +1364,7 @@ footer > section {
   }
   footer {
     flex-direction: column;
+    text-align: center;
   }
 
   footer > section {
@@ -1297,7 +1376,7 @@ footer > section {
     gap: 15px;
   }
 
-  .test {
+  .margin-wrapper {
     margin-top: 100px;
     margin-bottom: 100px;
   }
@@ -1337,12 +1416,6 @@ footer > section {
     padding: 5px;
   }
 
-  .visit-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 20px;
-  }
-
   .visit-container * > h2 {
     text-align: center;
     font-size: var(--small);
@@ -1366,7 +1439,7 @@ footer > section {
     max-height: none;
   }
 
-  .test {
+  .margin-wrapper {
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -1431,9 +1504,5 @@ footer > section {
 
   .footer-hours {
     text-align: left;
-  }
-  .test {
-    margin-top: 50px;
-    margin-bottom: 50px;
   }
 }
