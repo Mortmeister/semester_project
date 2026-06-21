@@ -14,7 +14,7 @@
 
   /* Neutral Colors */
   --dark-grey: #333333;
-  --light-grey: #f4f4f4;
+  --light-grey: #f3f1ec;
 
   /* Accent colors */
   --sky-blue: #87cefa;
@@ -282,6 +282,7 @@ header > nav {
 header > nav a,
 .container * > a {
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 header nav > a:hover,
@@ -296,6 +297,9 @@ header nav > a:hover,
 .sub-nav-content > a:hover,
 .sub-nav-content-2 > a:hover {
   text-decoration: underline 3px var(--pinkish-red);
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
 }
 
 .header-btn:hover {
@@ -326,6 +330,7 @@ header nav > a:hover,
   border-bottom: 1px solid;
   border-right: 1px solid;
   border-left: 1px solid;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
 }
 
 .header-btn:focus + .sub-nav-content,
@@ -354,6 +359,8 @@ header nav > a:hover,
   color: var(--dark-grey);
   margin: 0;
   padding: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 
 html {
@@ -1186,15 +1193,16 @@ footer > section {
   gap: 50px;
   width: 100%;
   padding: 60px;
+  border-right: 1px solid var(--light-grey);
+}
+
+footer > section:last-child {
+  border-right: none;
 }
 
 .footer-hours {
   line-height: 3;
   text-align: center;
-}
-
-footer > section {
-  border-right: solid;
 }
 
 /* Media queries */
@@ -1297,10 +1305,15 @@ footer > section {
     border-radius: 5px;
     font-size: var(--m);
     font-weight: 700;
+    padding: 10px 0;
+    transition: background-color 0.2s ease;
   }
 
   .header-btn {
     font-weight: 700;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
   }
 
   header nav a:hover,
@@ -1339,6 +1352,14 @@ footer > section {
     display: block;
     font-size: 4rem;
     color: var(--dark-grey);
+    cursor: pointer;
+    transition:
+      color 0.2s ease,
+      transform 0.25s ease;
+  }
+
+  .hamburger-icon:hover {
+    color: var(--pinkish-red);
   }
 
   header nav {
@@ -1391,6 +1412,12 @@ footer > section {
   footer > section {
     gap: 25px;
     padding: 25px 60px;
+    border-right: none;
+    border-bottom: 1px solid var(--light-grey);
+  }
+
+  footer > section:last-child {
+    border-bottom: none;
   }
 
   .circle-container {
