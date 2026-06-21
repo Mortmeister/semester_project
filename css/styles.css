@@ -920,11 +920,8 @@ a {
 }
 
 .container > div h2,
-.container > div p {
-  color: var(--dark-grey);
-}
-
 .container > div h3 {
+  color: var(--dark-grey);
   font-weight: 700;
   font-style: italic;
   text-transform: capitalize;
@@ -933,6 +930,7 @@ a {
 }
 
 .container > div p {
+  color: var(--dark-grey);
   margin-top: 0;
 }
 
