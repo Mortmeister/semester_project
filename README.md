@@ -19,14 +19,14 @@ Live demo: https://community-science-museum-oslo.netlify.app/
 - HTML5
 - CSS
 
-## Running locally
-
-Clone the repo and open index.html in your browser. No build step or dependencies required.
+## Getting started
 
 ```
 git clone git@github.com:Mortmeister/semester_project.git
 cd community-science-museum
 ```
+
+Clone the repo and open on liveserver in your browser.
 
 ### Author
 
